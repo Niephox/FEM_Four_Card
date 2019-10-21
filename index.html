@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,30 +16,43 @@
   </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
+  <header>
+     <h1 class="heading-l">Reliable, efficient delivery</h1>
+     <h1 class="heading-l bold">Powered by Technology </h1>
+    <p class="header-p">
+     Our Artificial Intelligence powered tools use millions of project data <br> points 
+     to ensure that your project is successful
+    </p>
+  </header>
+  <section class="main-content">
+    <div class="card cyan">
+      <h1 class="card-header">Supervisor</h1>
+      <p class="card-p">Monitors activity to identify project roadblocks</p>
+      <img src="./images/icon-supervisor.svg" alt="" class="card-icon">
+    </div>
+    <div class="content-d">
+      <div class="card red">
+        <h1 class="card-header">Team Builder</h1>
+        <p class="card-p">Scans our talent network to create the optimal team for your project</p>
+        <img src="./images/icon-team-builder.svg" alt="" class="card-icon">
+      </div>
+      <div class="card orange">
+        <h1 class="card-header">Karma</h1>
+        <p class="card-p">Regularly evaluates our talent to ensure quality</p>
+        <img src="./images/icon-karma.svg" alt="" class="card-icon">
+      </div>
+    </div>
+    <div class="card blue">
+      <h1 class="card-header">Calculator</h1>
+      <p class="card-p">Uses data from past projects to provide better delivery estimates</p>
+      <img src="./images/icon-calculator.svg" alt="" class="card-icon">
+    </div>
+  </section>
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/Niephox">Niephox</a>.
     </p>
   </footer>
 </body>
