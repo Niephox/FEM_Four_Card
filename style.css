@@ -90,6 +90,7 @@ header{
 .card-p{
     color: var(--ntrl-gra-blue);
     flex: 0 1 25%;
+    margin-bottom:40px;
 }
 .card-header{
     flex: 0 1 15%;
@@ -101,10 +102,10 @@ header{
     align-self:flex-end;
 
 }
-/* Mobile , extra small */
+ 
 
 
-/* Medium devices (landscape tablets, 768px and up) */
+ 
 @media only screen and (max-width: 1200px) { 
     .container{
         padding: 10px;
@@ -167,7 +168,7 @@ header{
     
     .main-content{
         flex-flow:row wrap;
-        justify-content:space-between;
+        justify-content:center;
     }
     .card{
         flex: 0 1 100%;
