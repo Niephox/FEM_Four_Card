@@ -24,7 +24,7 @@ body{
 header{
     display:flex;
     flex-direction:column;
-    padding:40px 120px;
+    /* padding:40px 120px; */
     text-align:center;
     align-items:center;
 }
@@ -63,16 +63,16 @@ header{
     border:0;
     outline:0;
     border-top: 4px solid red;
-    box-shadow:0px 0px 10px var(--ntrl-gra-blue);
+    box-shadow:0px 8px 10px var(--ntrl-gra-blue);
     border-radius:4px;
     margin:10px;
     padding: 30px;
-    height:280px;
+    /* height:280px; */
     min-width:350px;
-    
+    max-width:350px;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:flex-start;
     flex:0 1 inherit;
 }
 .red{
@@ -89,12 +89,101 @@ header{
 }
 .card-p{
     color: var(--ntrl-gra-blue);
-}
-.card-header{
     flex: 0 1 25%;
 }
+.card-header{
+    flex: 0 1 15%;
+}
+
 .card-icon{
-    flex: 0 1 40%;
+    flex: 0 1 50%;
+    object-fit:contain;
     align-self:flex-end;
 
+}
+/* Mobile , extra small */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1200px) { 
+    .container{
+        padding: 10px;
+    }
+    header{
+    
+    }
+    .header-p{
+        font-size:0.9em;
+    }
+    .heading-l{
+        font-size:1.2em;
+    }
+    .heding-m{
+        font-size:1.2em;
+    }
+    
+    .main-content{
+        flex-flow:row wrap;
+        justify-content:center;
+    }
+    .card{
+        flex: 0 1 45%;
+        min-width:0;
+        padding:15px;        
+    }
+    .content-d{
+        flex: 0 1 100%;
+        order:2;
+        flex-flow:row nowrap;
+        justify-content:center;
+        align-items:center;
+
+    }
+    .content-d .card {
+        flex:   0 1 45%;
+    }
+    .card-icon{
+        flex: 0 1 10%;
+        
+    }
+} 
+
+@media screen and (max-width:768px){
+    .container{
+        padding: 10px;
+    }
+    header{
+    
+    }
+    .header-p{
+        font-size:0.9em;
+    }
+    .heading-l{
+        font-size:1.2em;
+    }
+    .heding-m{
+        font-size:1.2em;
+    }
+    
+    .main-content{
+        flex-flow:row wrap;
+        justify-content:space-between;
+    }
+    .card{
+        flex: 0 1 100%;
+        min-width:0;
+        padding:15px;        
+    }
+    .content-d .card{
+        flex: 0 1 100%;
+    }
+    .content-d{
+        flex: 0 1 100%;
+        flex-flow:row wrap;
+        justify-content:space-between;
+    }
+    .card-icon{
+        flex: 0 1 10%;
+        
+    }
 }
